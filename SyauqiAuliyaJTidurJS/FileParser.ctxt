@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=FileParser
+comment0.text=\n\ Write\ a\ description\ of\ interface\ FileParser\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=x
+comment1.target=boolean\ read(java.lang.String)
+comment2.params=
+comment2.target=java.lang.Object\ write()
+numComments=3
