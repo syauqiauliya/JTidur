@@ -1,6 +1,8 @@
 package com.SyauqiAuliyaJTidurJS;
 
 
+import com.SyauqiAuliyaJTidurJS.dbjson.Serializable;
+
 /**
  * Write a description of class Complaint here.
  *

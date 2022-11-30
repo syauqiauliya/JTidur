@@ -1,5 +1,7 @@
 package com.SyauqiAuliyaJTidurJS;
 
+import com.SyauqiAuliyaJTidurJS.dbjson.Serializable;
+
 import java.util.Date;
 
 

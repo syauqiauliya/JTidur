@@ -2,6 +2,7 @@ package com.SyauqiAuliyaJTidurJS;
 
 
 
+import com.SyauqiAuliyaJTidurJS.dbjson.Serializable;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -14,28 +15,31 @@ import java.util.regex.Pattern;
 
 public class Account extends Serializable
 {
-
+    public double balance;
+    public Renter renter;
     public String name;
     public String email;
     public String password;
+
     public static final String REGEX_EMAIL = "^[A-Za-z0-9]+@+[A-Za-z\\S.?]+[A-Za-z]$";
 
     public static final String REGEX_PASSWORD = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$";
 
-    /*
-     public static final String REGEX_EMAIL = "[A-Za-z0-9\S]+@+[A-Za-z\S.?]+[\w]$";
-    public static final String REGEX_PASSWORD = "(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$";
-     */
+/*
+ public static final String REGEX_EMAIL = "[A-Za-z0-9\S]+@+[A-Za-z\S.?]+[\w]$";
+public static final String REGEX_PASSWORD = "(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$";
+ */
 
     public Account (String name, String email, String password){
-        //super(id);
+        super();
         this.name = name;
         this.email = email;
         this.password = password;
+        this.balance = 0;
     }
 
     public String toString(){
-        return "name: " + name + "\n" + "email: " + email + "\n" + "password: " + password;
+        return "name: " + name + "\n" + "email: " + email + "\n" + "password: " + password + "\n" + "renter: " + renter;
     }
 
     public boolean validate(){
@@ -51,12 +55,5 @@ public class Account extends Serializable
         return Matches1 && Matches2;
     }
 
-    /*public Object write(){
-        return null;
-    }*/
-
-    /*public boolean read(String x){
-        return false;
-    }*/
 
 }

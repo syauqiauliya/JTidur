@@ -1,4 +1,4 @@
-package com.SyauqiAuliyaJTidurJS;
+package com.SyauqiAuliyaJTidurJS.dbjson;
 
 
 import com.google.gson.Gson;

@@ -1,5 +1,7 @@
 package com.SyauqiAuliyaJTidurJS;
 
+import com.SyauqiAuliyaJTidurJS.dbjson.Serializable;
+
 /**
  * Write a description of class Voucher here.
  *

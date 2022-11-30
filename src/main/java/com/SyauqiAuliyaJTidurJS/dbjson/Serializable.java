@@ -1,7 +1,7 @@
-package com.SyauqiAuliyaJTidurJS;
+package com.SyauqiAuliyaJTidurJS.dbjson;
 import java.util.HashMap;
 
-public class Serializable {
+public class Serializable <T> implements Comparable<Serializable> {
     public final int id;
     private static HashMap<Class<?>, Integer> mapCounter = new HashMap<Class<?>, Integer>();
 
